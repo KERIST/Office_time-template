@@ -1,0 +1,20 @@
+.list {
+  color: #333;
+  @include font(12px, 'Arial');
+  padding: 0;
+  width: 275px;
+  &__item{
+    list-style: none;
+    padding: 3px 0 3px 23px;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: url("../images/sprite.png") no-repeat -394px -14px;
+    }
+  }
+}

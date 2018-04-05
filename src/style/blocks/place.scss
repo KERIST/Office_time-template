@@ -1,0 +1,85 @@
+.place{
+  width: 300px;
+  &__name{
+    background: #f0f0f0;
+    height: 100%;
+    padding: 8px 8px 14px 8px;
+    position: relative;
+    transition: all .7s;
+    margin-bottom: 8px;
+    border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+  }
+  &__head{
+    position: relative;
+    &:hover .place__buttons{
+      opacity: 1;
+    }
+    &:hover .place__name{
+      background: #fff;
+    }
+    &:after{
+      content: "";
+      width: 100%;
+      height: 6px;
+      position: absolute;
+      background: url("../images/sprite.png") 0 -62px no-repeat;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  &__img{
+    height: 148px;
+    width: 100%;
+    position: relative;
+  }
+  &__buttons{
+    opacity: 0;
+    left: 3px;
+    top: 3px;
+    position: absolute;
+    width: 294px;
+    height: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 1px 100px rgba(0, 0, 0, 0.75);
+    transition: all .7s;
+  }
+  &__download{
+    border-radius: 100%;
+    display: inline-block;
+    border: 5px solid rgba(0,0,0,.2);
+    width: 37px;
+    height: 37px;
+    background: url("../images/sprite.png") no-repeat -105px 0;
+    cursor: pointer;
+    &:hover{
+      background-position: -248px 0;
+    }
+  }
+  &__add{
+    border-radius: 100%;
+    display: inline-block;
+    border: 8px solid rgba(0,0,0,.2);
+    width: 62px;
+    height: 62px;
+    background: url("../images/sprite.png") no-repeat -142px 0;
+    cursor: pointer;
+    &:hover{
+      background-position: -288px 0;
+    }
+  }
+  &__view{
+    border-radius: 100%;
+    display: inline-block;
+    border: 5px solid rgba(0,0,0,.2);
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+    background: url("../images/sprite.png") no-repeat -210px 0;
+    &:hover{
+      background-position: -352px 0;
+    }
+  }
+}

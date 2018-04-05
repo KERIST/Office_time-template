@@ -1,0 +1,23 @@
+.menu{
+  font-size: 0;
+  display: flex;
+  &__item{
+    margin-left: 30px;
+    position: relative;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  &__link{
+    color: #666;
+    @include font(14px, 'Oxygen');
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: color .3s;
+    &:hover{
+      color: #222;
+      transition: color .3s;
+    }
+  }
+}

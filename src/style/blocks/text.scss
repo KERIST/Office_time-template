@@ -1,0 +1,7 @@
+.text{
+  @include font(12px, 'Arial');
+  color: #666;
+  padding: 10px;
+  line-height: 18px;
+  text-align: justify;
+}

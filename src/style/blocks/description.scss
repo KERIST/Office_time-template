@@ -1,0 +1,7 @@
+.description{
+  color: #999;
+  @include font(11px, 'Arial');
+  &_left_2{
+    padding-left: 5px;
+  }
+}

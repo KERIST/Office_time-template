@@ -1,0 +1,9 @@
+.hero-content{
+  width: 486px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  &__btn{
+    margin: 10px 3px;
+  }
+}

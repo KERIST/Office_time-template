@@ -1,0 +1,10 @@
+@mixin font2($size, $name, $weight:400, $style:normal) {
+  font: $style $weight $size $name;
+}
+@mixin font($size, $name, $weight:400, $style:normal){
+  font: $style $weight $size $name, 'Arial', 'Tahoma', sans-serif;
+}
+@function remy($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}

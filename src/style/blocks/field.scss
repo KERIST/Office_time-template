@@ -1,0 +1,88 @@
+.field {
+  position: relative;
+  width: 552px;
+  padding: 7px 268px 7px 5px;
+  overflow: hidden;
+
+  &_required {
+    ~ .field__invalid {
+      display: none;
+    }
+    ~ .field__valid {
+      display: none;
+    }
+    &:valid {
+      border-color: #cae28b;
+      ~ .field__valid {
+        display: block;
+      }
+    }
+    &:invalid {
+      border-color: #ecb0b0;
+      ~ .field__invalid {
+        display: block;
+      }
+    }
+  }
+  &_area {
+    width: 100%;
+    padding-right: 31px;
+  }
+
+  &_submit{
+    padding-left: 104px;
+  }
+
+  &__name {
+    @include font(remy(12), 'Arial');
+    color: #444;
+  }
+  &__input {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    float: right;
+  }
+  &__area {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    float: right;
+    resize: none;
+    width: 476px;
+    height: 176px;
+  }
+  &__valid {
+    display: none;
+    position: absolute;
+    top: 11px;
+    left: 288px;
+    width: 14px;
+    height: 14px;
+    background: url("../images/sprite.png") -462px 0 no-repeat;
+  }
+  &__invalid {
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 292px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    color: #ac4040;
+    @include font(remy(11), 'Arial');
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #ecb0b0;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -3px;
+      height: 8px;
+      background: #ecb0b0;
+      width: 8px;
+      transform: rotate(45deg);
+    }
+  }
+}

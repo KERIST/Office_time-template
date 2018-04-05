@@ -1,0 +1,21 @@
+.information{
+  border: 1px solid #ececec;
+  border-radius: 3px;
+  padding: 8px;
+  margin-top: 12px;
+  width: 300px;
+  &__caption{
+    color: #666;
+    @include font(remy(12), 'Arial', 700);
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  &__txt{
+    color: #444;
+    text-align: justify;
+    padding: 10px 2px;
+    @include font(remy(12), 'Arial');
+    line-height: 20px;
+  }
+}

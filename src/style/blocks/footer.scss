@@ -1,0 +1,25 @@
+.footer {
+  padding: 15px 1px 25px 1px;
+  display: flex;
+  position: relative;
+
+  > ul {
+    margin-right: 45px;
+    &:first-child {
+      margin-right: 64px;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &:after {
+    content: "";
+    height: 30px;
+    width: 972px;
+    position: absolute;
+    left: -20px;
+    bottom: -44px;
+    background: url("../images/sprite.png") 0 -76px;
+  }
+}

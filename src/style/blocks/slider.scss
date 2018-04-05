@@ -1,0 +1,75 @@
+.slider {
+  width: 292px;
+  height: 189px;
+  position: relative;
+  overflow: hidden;
+  font-size: 0;
+  white-space: nowrap;
+  &__item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+    &_visible {
+      opacity: 1;
+      transition: opacity 0.5s;
+    }
+  }
+  &__img {
+    width: 292px;
+    height: 189px;
+  }
+  &__control-panel {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__btn {
+    width: 32px;
+    height: 49px;
+    opacity: 0.6;
+    border-radius: 3px;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+    padding: 0;
+    background: url("../images/sprite.png") 0 0 no-repeat;
+    &_prev {
+      background-position: 0 0;
+    }
+    &_next {
+      background-position: -32px 0;
+    }
+  }
+  &__description {
+    width: 214px;
+    height: 49px;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 3px;
+    padding: 7px 7px 10px 7px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  &__name {
+    opacity: 1;
+    color: #f6f6f6;
+    @include font(13px, "Arial");
+  }
+  &__link {
+    color: #ffc14c;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__text {
+    opacity: 1;
+    @include font(11px, "Arial");
+    color: #676767;
+  }
+}

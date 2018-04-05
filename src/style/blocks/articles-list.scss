@@ -1,0 +1,46 @@
+.articles-list{
+  width: 458px;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+  &__item{
+    padding-left: 32px;
+    position: relative;
+    border-bottom: 1px solid $list-border;
+    &:last-child{
+      border-bottom: none;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: url("../images/sprite.png") no-repeat -64px 0;
+    }
+  }
+  &__caption{
+    color: #ffad19;
+    padding: 6px 2px;
+    @include font(12px, 'Arial', 700);
+  }
+  &__link{
+    display: inline-block;
+    width: 100%;
+    color: $txt;
+    text-decoration: none;
+    @include font(12px, 'Arial');
+    padding: 6px 2px 6px 0;
+    transition: color .3s;
+    &:hover{
+      transition: color .3s;
+      color: $hover-txt;
+    }
+  }
+  &__text{
+    font-size: 11px;
+    color: $list-txt;
+    width: 100%;
+  }
+}

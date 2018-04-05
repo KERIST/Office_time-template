@@ -1,0 +1,19 @@
+.tab{
+  padding: 26px 20px;
+  border: 1px solid #ececec;
+  border-top: none;
+  display: none;
+  border-radius: 0 0 3px 3px;
+  &__caption{
+    padding: 10px 0;
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    border-top: 1px solid #e5e5e5;
+  }
+  &_show{
+    display: block;
+  }
+}

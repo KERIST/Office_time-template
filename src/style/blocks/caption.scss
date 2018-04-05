@@ -1,0 +1,17 @@
+.caption{
+  @include font(18px, 'Oxygen');
+  padding: 0 0 0 3px;
+  color: $caption-txt;
+  &_amazing{
+    font-size: 38px;
+    color: $caption-amazing;
+  }
+  &_pb_15{
+    padding-bottom: 15px;
+  }
+  &_undiscovered-beauty{
+    font-size: 14px;
+    color: $caption-undiscovered-beauty;
+    padding: 0 0 5px 0;
+  }
+}

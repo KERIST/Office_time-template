@@ -1,0 +1,9 @@
+.logo{
+  display: flex;
+  flex-flow: column;
+  padding: 0 10px;
+  &__header{
+    color: #222;
+    @include font(40px, 'Oleo Script')
+  }
+}

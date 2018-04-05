@@ -1,0 +1,22 @@
+.tab-inf{
+  width: 275px;
+  display: flex;
+  &__img{
+    width: 122px;
+    height: 99px;
+    border: 1px solid #f1f1f1;
+    padding: 2px;
+  }
+  &__caption{
+    @include font(12px, 'Arial');
+    color: #333;
+    padding: 0 8px;
+    font-weight: 700;
+  }
+  &__text{
+    line-height: 20px;
+    @include font(12px, 'Arial');
+    color: #999;
+    padding: 8px;
+  }
+}
